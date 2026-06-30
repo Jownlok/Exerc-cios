@@ -42,6 +42,16 @@ def listarFruta(nomeArquivo):
         print(a.read())
     finally:
         a.close()
+        
+def listarFruta(nomeArquivo):
+    try:
+        a = open(nomeArquivo, 'rt')
+    except:
+        print('Erro ao ler arquivo.')
+    else:
+        print(a.read())
+    finally:
+        a.close()
 
 def menu():
     print('-' * 30)
